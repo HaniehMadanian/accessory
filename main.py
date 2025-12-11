@@ -8,6 +8,8 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("Accessory Store - Project")
         self.setGeometry(100, 100, 800, 600)
+        
+        
 
 
 if __name__ == "__main__":
