@@ -1,13 +1,17 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow
 from database import create_tables, seed_initial_data_if_empty
-
+from ui.one_ui import Ui_MainWindow
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Accessory Store - Project")
         self.setGeometry(100, 100, 800, 600)
+
+         
+        self.ui = Ui_MainWindow()  # یا Ui_Form
+        self.ui.setupUi(self)
         
         
 
